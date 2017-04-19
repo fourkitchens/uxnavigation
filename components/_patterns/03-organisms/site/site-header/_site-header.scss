@@ -1,0 +1,38 @@
+.site-header {
+    display: flex;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+
+    .site-logo {
+        display: flex;
+        flex: 0 0 auto;
+        width: 60%;
+        a {
+            display: block;
+        }
+    }
+    .utilities {
+        flex: 0 0 auto;
+        width:100%;
+        @include medium {
+            padding: 0;
+            width:40%;
+        }
+    }
+    .menu.utility {
+        flex: 0 0 auto;
+        width:100%;
+        padding: 1em 1em .25em 1em;
+    }
+    .search--form {
+        flex: 0 0 auto;
+        width:100%;
+        padding: .25em 1em 0;
+    }
+    .navigation {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
