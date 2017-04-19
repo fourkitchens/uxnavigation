@@ -1,0 +1,47 @@
+.button {
+  background-color: $black;
+  border:none;
+  color: $white;
+  cursor: pointer;
+  line-height: 1.4;
+  padding: .5em 1em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:visited {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  &--alt {
+    font-weight: 600;
+    @include font-size(.7);
+    background-color: $gray;
+    padding: .4em .6em .3em;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+
+  &--alt-2 {
+    background-color: $gray-lightest;
+    color: $black;
+    @include font-size(.8);
+    font-weight: 600;
+    text-transform: none;
+
+    &:visited {
+      color: $black;
+    }
+
+    &:hover {
+      background-color: $gray-lighter;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "fourkitchens/emulsify",
+    "description": "Project template for Drupal 8 themes",
+    "type": "drupal-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evan Willhite",
+            "role": ""
+        },
+        {
+            "name": "Brian Lewis",
+            "role": ""
+        },
+        {
+            "name": "Luke Herrington",
+            "role": ""
+        },
+        {
+            "name": "Ben Teegarden",
+            "role": ""
+        },
+        {
+            "name": "Randy Oest",
+            "role": ""
+        }
+    ],
+    "repositories": [],
+    "require": {},
+    "require-dev": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "pre-install-cmd": [],
+        "pre-update-cmd": [],
+        "post-install-cmd": [],
+        "post-update-cmd": []
+    },
+    "extra": {}
+}

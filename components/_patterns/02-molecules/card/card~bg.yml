@@ -1,0 +1,15 @@
+card_modifiers:
+  1:
+    bg
+
+# Title
+card_title:
+  "This is a card-bg title"
+
+# Subtitle
+card_subtitle:
+  ""
+
+# Link
+card_link_text:
+  'Read more about cards with a background'

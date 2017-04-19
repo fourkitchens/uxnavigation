@@ -1,0 +1,37 @@
+// Create a mixin for paragraph styles that can be implemented
+// in components with other classnames.
+@mixin paragraph($margin: 0 0 1em) {
+  margin: #{$margin};
+}
+
+body {
+  color:$gray;
+  @include body-copy;
+}
+
+.paragraph {
+  @include paragraph;
+
+  &--no-space {
+    margin-bottom: 0;
+  }
+}
+
+.blockquote {
+  font-style: italic;
+  border-left: solid 3px $border;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: currentColor;
+}

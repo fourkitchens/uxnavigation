@@ -1,0 +1,47 @@
+//
+// Generic header styles:
+// All arguments are optional. If not defined, the defaults below will be used
+//
+// use:
+// @include headings;
+//
+// or, to define new values:
+// @include headings($font-size: 1.4em, $color: $accent, $line-height: 2);
+//
+@mixin headings ($color: $gray-darker, $font-family: $heading, $font-weight: 600, $font-size: 1em, $line-height: 1.5, $margin: 0 0 0.5em, $width: 100%){
+  color: #{$color};
+  font-family: #{$font-family};
+  font-weight: #{$font-weight};
+  font-size: #{$font-size};
+  line-height: #{$line-height};
+  margin: #{$margin};
+  width: #{$width}; // For non header (inline) elements with these styles, e.g. legend
+}
+
+// TODO: BEM selectors should be applied to wysiwyg-created content
+
+.text-long {
+  h1 {
+    @extend .heading-1;
+  }
+
+  h2 {
+    @extend .heading-2;
+  }
+
+  h3 {
+    @extend .heading-3;
+  }
+
+  h4 {
+    @extend .heading-4;
+  }
+
+  h5 {
+    @extend .heading-5;
+  }
+
+  h6 {
+    @extend .heading-6;
+  }
+}
