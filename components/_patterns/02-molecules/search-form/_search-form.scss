@@ -1,0 +1,16 @@
+.search--form {
+    max-width: $measure-max;
+}
+.search--input {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        flex: 1 auto;
+    }
+    .button {
+        flex: 1 auto;
+    }
+}

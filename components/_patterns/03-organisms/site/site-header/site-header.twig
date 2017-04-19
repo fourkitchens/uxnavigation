@@ -1,5 +1,12 @@
 <header class="site-header">
+  {% include "atoms-logo" %}
+  <div class="utilities">
+    {% include "molecules-utility-menu" %}
+    {% include "molecules-search-form" %}
+  </div>
   <div class="navigation">
     {{ content }}
+    {% include "molecules-primary-menu" %}
+
   </div>
 </header>

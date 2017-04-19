@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Theme override to display a projects landing page.
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+<div class="layout-container">
+  {% include "organisms-site-header" %}
+  <div class="content-outer">
+
+    {{ page.header }}
+
+    {{ page.primary_menu }}
+
+    {{ page.breadcrumb }}
+
+    {{ page.highlighted }}
+
+    {{ page.help }}
+
+    {{ messages }}
+
+    <main role="main" class="main container one-column">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+      <div class="content main-content{% if page.sidebar %}--with-sidebar{% endif %}">
+
+        {{ page.content }}
+        {% include "atoms-heading-1" %}
+        {% include "atoms-heading-2" %}
+        {% include "atoms-paragraph" %}
+
+      </div>{# /.layout-content #}
+
+    </main>
+
+    {% if page.footer %}
+      {{ page.footer }}
+    {% endif %}
+  </div>{# /.content-outer #}
+
+  {% include "organisms-site-footer" %}
+
+</div>{# /.layout-container #}

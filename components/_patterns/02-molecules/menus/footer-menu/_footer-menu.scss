@@ -1,0 +1,17 @@
+.menu.footer {
+  margin-top: 1.5em;
+  background: $white;
+
+  .menu__item {
+    font-weight:400;
+    @include font-size(1.2);
+
+    @include large {
+      display: inline;
+    }
+    a {
+      color: $gray-dark;
+      padding: .5em 1em;
+    }
+  }
+}

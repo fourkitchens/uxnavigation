@@ -1,0 +1,7 @@
+button_text:
+  "Search"
+button_url:
+  "#"
+  button_modifiers:
+  1:
+    secondary
